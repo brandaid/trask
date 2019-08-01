@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "fonts";
+@import "flexboxgrid";
+@import "layout";
+@import "boxes";
+@import "buttons";
+
+// SECTIONS
+@import "header";
+@import "footer";
+@import "navbar";
+@import "typography";
+@import "images";
+@import "preloader";
+@import "lightgallery";
+
+// SECTIONS HOME
+@import "home";
+@import "star-rating";
+@import "product-detail";
+@import "stocklists";
+@import "shoes";
+@import "checkout";
+@import "ordersummary";
+

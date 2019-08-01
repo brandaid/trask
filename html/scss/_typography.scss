@@ -1,0 +1,238 @@
+body {
+	font-size: 100%;
+}
+body, h1, h2, h3, h4, h5, h6 {
+ 	font-size-adjust: 0.5;
+}
+h1, h2, h3, h4, h5, h6, p, span, a, small, ul, ol, li, input {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $secondary-font;
+	font-weight: $sf-bold;
+	text-transform: uppercase;
+}
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 40px;
+	color: $font-color;
+	font-family: $font-bert;
+	a {
+		color: #4c5ff2;
+		text-decoration: underline;
+		&:hover {
+			color: black;
+			text-decoration: underline;
+		}
+	}
+}
+a {
+	font-family: $font-bert;
+	color: $brand-secondary;
+	&:hover {
+		color: $brand-primary;
+	}
+}
+
+input {
+	font-family: $font-bert;
+}
+h1, .h1 {
+  	font-size: 2em;
+  	line-height: 1.25;
+	margin-bottom: 20px;
+}
+h2, .h2 {
+  	font-size: 1.625em;
+  	font-size: 40px;
+  	line-height: 1em;
+	margin-bottom: 18px;
+	color: $brand-secondary;
+
+}
+h3, .h3 {
+  	font-size: 1.375em;
+  	line-height: 1.13636364;
+	margin-bottom: 16px;
+}
+h4, .h4 {
+  	font-size: 1.125em;
+  	line-height: 1.11111111;
+	margin-bottom: 14px;
+}
+h5, .h5 {
+  	font-size: 1em;
+  	line-height: 1;
+	margin-bottom: 12px;
+}
+h6, .h6 {
+  	font-size: .85em;
+  	line-height: 1;
+	margin-bottom: 10px;
+}
+blockquote {
+  	font-size: 1.25em;
+  	line-height: 1.25;
+  	border-left: 10px solid $brand-primary;
+  	padding: 20px 0 20px 65px; 
+  	margin-bottom: 70px;
+ 	p {
+ 		text-transform: uppercase;
+ 		font-family: $secondary-font;
+ 		font-weight: $sf-bold;
+ 		color: black;
+ 		font-size: 26px;
+ 		margin-bottom: 0;
+ 	}
+}
+
+ul, ol {
+	list-style-position: outside;
+	padding-left: 35px;
+	color: $font-color;
+	font-size: 18px;
+	line-height: 1.4em;
+	margin-bottom: 40px;
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+ul ul, ol ul {
+   list-style-type: circle;
+   list-style-position: outside;
+   margin-left: 15px;
+}
+ol ol, ul ol {
+   list-style-type: lower-latin;
+   list-style-position: outside;
+   margin-left: 15px;
+}
+
+b, strong {
+	color: black;
+	font-family: $pf-bold;
+}
+
+.rayed {
+	&:before {
+		content: "";
+		background: $brand-secondary;
+		height: 4px;
+		width: 86px;
+		display: block;
+		margin-bottom: 23px;
+	}
+}
+.vertical-line {
+	&:before {
+		content: "";
+		width: 1px;
+		display: block;
+		height: 60px;
+		background: $brand-primary;
+		@include center;
+		margin-bottom: 18px;
+	}
+}
+.underlined {
+	text-transform: uppercase;
+	font-family: $secondary-font;
+	font-weight: $sf-bold;
+	&:after {
+		content: "";
+		height: 1px;
+		background: $brand-primary;
+		margin: 18px 0;
+		display: block;
+		width: 90px;
+		@include center;
+	}
+}
+
+.small-title {
+	font-size: 18px;
+	text-align: center;
+	font-family: $tertiary-font;
+	letter-spacing: 3px;
+	margin-bottom: 60px;
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+	p {
+		line-height: 1.375;
+	}
+	h1, .h1 {
+    	font-size: 2.5em;
+    	line-height: 1.125;
+  	}
+  	h2, .h2 {
+    	font-size: 2em;
+    	line-height: 1.125;
+  	}
+	h3, .h3 {
+    	font-size: 1.5em;
+    	line-height: 1.25;
+  	}
+	h4, .h4 {
+		font-size: 1.2em;
+    	line-height: 1.22222222;
+	}
+	h5, .h5 {
+	  	font-size: 1em;
+	  	line-height: 1;
+	}
+	h6, .h6 {
+	  	font-size: .85em;
+	  	line-height: 1;
+	}
+
+	blockquote {
+	  	font-size: 1.25em;
+	  	line-height: 1.25;
+	  	border-left: 10px solid $brand-primary;
+	  	padding: 20px 0 20px 65px; 
+	  	margin-bottom: 70px;
+	 	p {
+	 		text-transform: uppercase;
+	 		font-family: $secondary-font;
+	 		font-weight: $sf-bold;
+	 		color: black;
+	 		font-size: 26px;
+	 		margin-bottom: 0;
+	 	}
+	}
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+	h1, .h1 {
+	   font-size: 3em;
+	   line-height: 1.05;
+	}
+	h2, .h2 {
+	  	font-size: 2em;
+	  	line-height: 1.125;
+	}
+	h3, .h3 {
+    	font-size: 1.75em;
+    	line-height: 1.25;
+  	}
+  	p {
+  		font-size: 19px;
+  		line-height: 1.5em;
+  		margin-bottom: 45px;
+  	}
+  	.small-title {
+  		margin-bottom: 85px;
+  	}
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

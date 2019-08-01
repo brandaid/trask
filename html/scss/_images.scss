@@ -1,0 +1,29 @@
+.wp-image {
+	width: 100%;
+	height: auto;
+	-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+	margin-bottom: 40px;
+}
+
+.responsive-image {
+	width: 100%;
+	height: auto;
+}
+
+.shadow {
+	-webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}
