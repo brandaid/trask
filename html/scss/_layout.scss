@@ -1,0 +1,132 @@
+html {
+	font-family: $primary-font;
+}
+
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	-webkit-transition: all 230ms ease-in-out;
+	-moz-transition: all 230ms ease-in-out;
+	-ms-transition: all 230ms ease-in-out;
+	-o-transition: all 230ms ease-in-out;
+	transition: all 230ms ease-in-out;
+}
+.container,
+.big-container {
+	padding-left: 15px;
+	padding-right: 15px;
+	@include border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.container,
+.container-tn,
+.big-container {
+	@include center;
+	max-width: 750px;
+}
+.formated-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.center-spacing {
+	padding: 120px 0 40px 0;
+	text-align: center;
+}
+.only-desktop {
+	display: none;
+}
+// 768px
+@media all and (min-width: $screen-portrait) {
+	.table-layout {
+		display: table;
+		width: 100%;
+		.table-layout-col {
+			display: table-cell;
+			width: 50%;
+			vertical-align: middle;
+
+			> p {
+				padding-top: 28px;
+			}
+		}
+	}
+	.table-layout-three {
+		.table-layout-col {
+			width: 33.33333%;
+			vertical-align: top;
+		}
+	}
+	body {
+		padding-top: 0;
+	}
+	.table-layout-1-3 {
+		.table-layout-col:nth-child(1) {
+			width: 40%;
+		}
+		.table-layout-col:nth-child(2) {
+			width: 60%;
+		}
+	}
+
+	.table-layout-3-1 {
+		.table-layout-col:nth-child(1) {
+			width: 60%;
+		}
+		.table-layout-col:nth-child(2) {
+			width: 40%;
+		}
+	}
+	.only-desktop {
+		display: block
+	}
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+	.container {
+		max-width: 970px;
+	}
+	.container-tn {
+		max-width: 850px;
+	}
+	.big-container {
+		max-width: 95%;
+	}
+
+	.table-layout-1-3 {
+		.table-layout-col:nth-child(1) {
+			width: 30%;
+		}
+		.table-layout-col:nth-child(2) {
+			width: 80%;
+		}
+	}
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+	.container {
+		max-width: 1170px;
+	}
+	.big-container {
+		max-width: 1365px;
+	}
+}
+
+// 1500px
+@media all and (min-width: $screen-bigdesktop) {
+	.big-container {
+		
+	}
+}

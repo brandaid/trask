@@ -1,0 +1,260 @@
+.footer {
+	background: #fff;
+	margin-top: 60px;
+	.big-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+.top-footer {
+	.table-layout-col {
+		width: 46%;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 10px;
+	}
+	.table-layout {
+		display: inline-block;
+	}
+	.brand {
+		img {
+			max-width: 260px;
+			margin-bottom: 50px;
+		}
+	}
+	h4 {
+		font-family: $font-bert;
+		font-size: 15px;
+		text-transform: none;
+		padding-bottom: 20px;
+		color: $brand-primary;
+		font-weight: 500;
+		letter-spacing: 1px;
+	}
+	p {
+		font-family: $font-bert;
+		font-size: 16px;
+	}
+	.linkedin {
+		max-width: 160px;
+	}
+	ul.links-footer {
+		list-style-type: none; 
+		padding-left: 0;
+		li {
+			padding-bottom: 5px;
+			a {
+				font-size: 15px;
+				letter-spacing: 1px;
+				color: $brand-secondary;
+				font-family: $font-bert;
+				&:hover {
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+}
+.bottom-footer {
+	padding: 40px 0;
+	h4 {
+		letter-spacing: 1px;
+		font-size: 15px;
+		font-family: $font-bert;
+		text-transform: none;
+		font-weight: 500;
+		color: $brand-primary;
+		span {
+			color: $brand-secondary;
+		}
+		a {
+			color: $brand-primary;
+		}
+	}
+	p {
+		letter-spacing: 1px;
+		color: $brand-secondary;
+		margin: 0;
+		font-size: 15px;
+	}
+	a {
+		letter-spacing: 1px;
+		color: $brand-secondary;
+		font-family: $font-bert;
+	}
+	.share {
+		a {
+			img {
+				vertical-align: middle;
+				padding-left: 5px;
+				width: 7px;
+			}
+		}
+	}
+	.footer-newsletter {
+		padding-left: 0;
+		margin-top: 20px;
+		padding-bottom: 10px;
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-family:  $font-bert;
+		color: $brand-secondary;
+		border: none;
+		width: 80%;
+		&:focus {
+			outline: none;
+		}
+	}
+	.newsletter {
+		position: relative;
+		max-width: 300px;
+		margin-bottom: 50px;
+		border-bottom: 1px solid $brand-secondary;
+		.submit-btn {
+			right: 0;
+			position: absolute;
+			outline: none;
+			padding: 0;
+			bottom: 10px;
+			border: none;
+			cursor: pointer;
+			background: transparent;
+			img {
+				width: 24px;
+			}
+		}
+	}
+	.gallery-images {
+		margin-top: 35px;
+		a {
+			img {
+			max-width: 150px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			}	
+		}
+
+	}
+}
+
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+	.footer {
+		text-align: left;
+	}
+	.top-footer {
+		display: flex;
+		h4 {
+			margin-left: 10px;
+		}
+		.table-layout-col {
+			padding: 20px 25px 20px 0;
+			width: 27%;
+			vertical-align: top;
+		}
+		.links-footer {
+			margin-left: 10px;
+		}
+		.brand {
+			img {
+				max-width: 130px;
+				margin-bottom: 0px;
+			}
+		}
+		.linkedin {
+			max-width: 130px;
+		}
+	}
+	.bottom-footer {
+		padding: 55px 0;
+		.footer-newsletter {
+			margin-top: 25px;
+		}
+		.newsletter {
+			margin-left: 10px;
+		}
+		.gallery-images {
+			margin-top: 25px;
+			a {
+				img {
+					max-width: 90px;
+					padding-right: 5px;
+				}
+			}
+		}
+		.gallery {
+			font-size: 0;
+		}
+		.share {
+			width: 100%;
+			display: inline-block;
+			font-size: 0;
+			h4, a {
+				font-size: 15px;
+				vertical-align: top;
+				display: inline-block;
+			}
+			h4 {
+				width: 76%;
+			}	
+			a {
+				width: 23%;
+				padding-left: 5px;
+			}
+		}
+		.table-layout {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+// 992px
+@media all and (min-width: $screen-landscape) {
+	.top-footer {
+		.table-layout-col {
+			padding: 0;
+		}
+		.big-container {
+    		max-width: 100%;
+		}
+		.table-layout {
+			display: flex;
+		}
+	}
+	.bottom-footer {
+		.big-container {
+			max-width: 100%;
+		}
+		.table-layout-col {
+			&.news {
+				width: 25%;
+			}
+			&.instagram {
+				width: 75%;
+				margin-left: 120px;
+			}
+		}
+	}
+}
+// 1200px
+@media all and (min-width: $screen-desktop) {
+	.top-footer, 
+	.bottom-footer {
+		.big-container {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+	}
+}
+
+// 1500px
+@media all and (min-width: $screen-bigdesktop) {
+	.top-footer,
+	.bottom-footer {
+			.big-container {
+				max-width: 1550px;
+			}
+	}
+}

@@ -1,0 +1,270 @@
+.bigimg {
+	background-repeat: no-repeat;
+	background-size: center;
+	min-height: 390px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+	text-align: center;
+	padding-top: 20px;
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.1);
+		background-blend-mode: darken;
+		> a {
+			color: #fff;
+		}
+	}
+	h4, a {
+	font-family: $font-bert;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	}
+	h3 {
+		font-family: $secondary-font;
+		font-size: 35px;
+		color: #fff;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	h4 {
+		color: #fff;
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	a {
+		font-size: 16px;
+		color: $brand-secondary;
+		&:hover {
+			color: #fff;
+		}
+	}
+	&.men {
+		background-image: url(images/photo1.png);
+	}
+	&.women {
+		background-image: url(images/photo5.png);
+	}
+	&.leather {
+		background-image: url(images/photo2.png);
+	}
+	&.bags {
+		background-image: url(images/photo4.png);
+		a {
+			color: #fff;
+		}
+	}
+	&.story {
+		background-image: url(images/photo6.png);
+		p {
+			font-family: $fontbodital;
+			color: $brand-primary;
+			span {
+				font-family: $primary-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&.shoes {
+		background-image: url(images/photo3.png);
+	}
+}
+.vertical-align {
+	display: flex!important;
+	justify-content: center;
+	&.bags {
+		align-items: center;
+	}
+	a {
+		padding-bottom: 40px;
+	}
+}
+
+.login__box--container {
+	display: none;
+}
+
+
+// 450px
+@media all and (min-width: $screen-mobile) and (max-width: 549px) {
+	.bigimg {
+		min-height: 470px;
+	}
+}
+
+// 550px
+@media all and (min-width: 550px) and (max-width: 659px) {
+	.bigimg {
+		min-height: 540px;
+	}
+}
+
+//650px
+
+@media all and (min-width: 650px) and (max-width: 767px) {
+	.bigimg {
+		min-height: 650px;
+	}
+}
+// 768px
+@media all and (min-width: $screen-portrait) {
+	.the-all-container {
+		&.home {
+			padding-bottom: 80px;
+		}
+	}
+	.story {
+		&.vertical-align {
+			justify-content: normal;
+		}
+	}
+	.image-container {
+		width: 100%;
+		display: flex;
+		height: 100%;
+		flex-wrap: wrap;
+		font-size: 0;
+		.bigimg {
+			flex: 66.666%;
+			flex-direction: column;
+			max-width: 66.666%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			padding-top: 60px;
+			background-size: cover;
+			h4 {
+				margin-bottom: 5px;
+			}
+			&.shoes,
+			&.bags,
+			&.story,
+			&.leather {
+				flex: 6;
+				max-width: 100%;
+				padding-top: 40px;
+			}
+		}
+		&.woman {
+			.women {
+				order: 2;
+			}
+			.smallimg-container {
+				order: 1;
+			}
+		}
+		.smallimg-container {
+			width: 33.333%;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+	.login__box--container{
+		width: 450px;
+		border: 1px solid #ccc;
+		position: absolute;
+		top: 116px;
+		z-index: 8;
+		background-color: #fff;
+		display: none;
+		padding:40px 20px 80px 20px;
+	}
+
+	.close-login{
+		position: absolute;
+	}
+
+	.login__content{
+		margin-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.login__title{
+		font-size:28px;
+		color:$brand-primary;
+		font-family: $secondary-font;
+		text-align: center;
+		margin-bottom: 40px;
+		font-weight: normal;
+		text-transform: capitalize;
+	}
+
+	.login__input--label{
+		color:$brand-secondary;
+		font-size: 12px;
+		font-family: $font-bert;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 0;
+	}
+
+	.login__input--container{
+		border: 1px solid $brand-secondary;
+		padding: 10px 15px;
+		margin-left:-1px;
+		margin-top: 5px;
+		input{
+			width: 100%;
+			border:none;
+			font-size:12px;
+			&::placeholder{
+	      color:#acacac;
+	      opacity:0.5;
+	      font-weight: normal;
+	      letter-spacing: 1px;
+	    }
+	    &:focus{
+	      outline:none !important;
+	    }
+		}
+	}
+
+	.login__input--marg-bottom{
+		margin-bottom:20px;
+	}
+
+	.first__login-content--mgn-bot{
+		margin-bottom: 60px;
+	}
+}
+
+@media all and (min-width: $screen-portrait) and (max-width: 991px) {
+
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+
+
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+	.bigimg {
+		h3 {
+			font-size: 40px;
+		}
+	}
+}
+
+// 1500px
+@media all and (min-width: $screen-bigdesktop) {
+	.bigimg {
+		min-height: 500px;
+		h3 {
+			font-size: 45px;
+		}
+		h4 {
+			font-size: 20px;
+		}
+		a {
+			font-size: 18px;
+		}
+	}
+}
+

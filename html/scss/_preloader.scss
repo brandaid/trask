@@ -1,0 +1,21 @@
+#loader {
+    background: white;
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

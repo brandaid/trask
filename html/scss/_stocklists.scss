@@ -1,0 +1,257 @@
+.stocklist__title--format{
+  text-align: left;
+  text-transform: capitalize;
+  color:$brand-primary;
+  font-family: $secondary-font;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 32px;
+  margin: 0;
+}
+
+.stocklist__first-box{
+  padding-top: 30px;
+}
+
+.stocklist__text-box--input-container{
+  padding:0 10px;
+  border: 1px solid #acacac;
+}
+
+.stocklist__text-box{
+  input{
+    margin-top:0;
+    &::placeholder{
+      line-height: 110%;
+    }
+  }
+}
+
+.stocklist__btn--margin{
+  margin-top: 20px;
+}
+
+.stockist__main-form--container{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.stocklist__map--container{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.stocklists__map{
+  width: 100%;
+  object-fit: cover;
+}
+
+.fa-map-marker:before{
+  color:$brand-primary;
+  font-size:30px;
+}
+
+
+.stocklists__map--pin{
+  position: absolute;
+  cursor:pointer;
+}
+
+
+#map-pin-1{
+  top: 66%;
+  left: 80%;
+
+}
+
+#map-pin-2{
+  top: 20%;
+  left: 12%;
+}
+
+#map-pin-3{
+  top: 50%;
+  left: 7%;
+}
+
+.stocklist__map--card{
+  position: absolute;
+  width: 180px;
+  height: 160px;
+  background-color: #ffffff;
+  border: 1px solid #acacac;
+  display: none;
+  z-index: 1;
+  padding:20px 15px;
+}
+
+.close,.close-item ,.close-login{
+  cursor:pointer;
+  position: absolute;
+  right: 1px;
+  top: 6px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  margin-bottom: 0px;
+}
+.close:hover,.close-item:hover,.close-login:hover {
+  opacity: 1;
+}
+.close:before, .close:after ,.close-item:before,.close-item:after{
+  position: absolute;
+  left: 19px;
+  content: ' ';
+  height: 15px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before ,.close-item:before,.close-login:before{
+  transform: rotate(45deg);
+}
+.close:after,.close-item:after,.close-login:after{
+  transform: rotate(-45deg);
+}
+
+.close-login:before,.close-login:after{
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+
+.stocklist__map-card--inner-box{
+  width: 100%;
+  height: 100%;
+  padding:20px 10px;
+}
+
+.stocklist__map-card--title,.stocklist__map-card--desc,.stocklist__text-box--title,.stocklist__text-box--desc{
+  font-family: $font-bert;
+  font-size:14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.stocklist__text-box--desc {
+  font-weight: normal;
+}
+.stocklist__map-card--title,.stocklist__text-box--title{
+  color:$brand-primary;
+}
+
+.stocklist__map-card--desc,.stocklist__text-box--desc{
+  color:$brand-secondary;
+}
+
+.stocklist__locations--box{
+  margin-bottom: 20px;
+}
+.prods__half-btn {
+  input {
+  width: 100%;
+  padding: 15px 0 10px 10px;
+  font-size: 17px;
+  border: 1px solid #acacac;
+  box-sizing: border-box;
+  color: $brand-secondary;
+  letter-spacing: 1px;
+  outline: none;
+    &::placeholder {
+      color:#acacac;
+      opacity:0.5;
+      letter-spacing: 1px;
+      overflow: visible;
+    }
+  }
+}
+.stocklist__locations--section:last-child{
+  margin-bottom: 60px;
+}
+.stocklist__text-box--desc{
+  padding-left:20px;
+}
+
+@media all and(min-width: 768px){
+
+  .stocklist__btn--margin{
+    margin-top: 0;
+  }
+
+  .stocklist__map--card{
+    width: 180px;
+    height: 160px;
+    padding:20px;
+  }
+
+  .stocklist__first-box,.stocklist__map--container,.stocklist__locations--section{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .stocklist__title--format{
+    margin-bottom: 20px;
+  }
+
+  .prods__half-btn{
+    width: 50%;
+  }
+
+  .stocklist__text-box,.products__main-btn--container{
+    display: inline-block;
+  }
+  .products__main-btn--container{
+    vertical-align: top;
+  }
+
+
+  .stocklist__first-box{
+    clear: both;
+    margin-bottom: 20px;
+  }
+
+  .stocklist__map--container{
+    margin-bottom:60px;
+
+  }
+
+  .custom-divider{
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .stocklists__inner-box{
+    width: 50%;
+    margin-right: auto;
+
+  }
+
+  .stocklist__text-box--title,.stocklist__text-box--desc{
+    font-size: 18px;
+  }
+
+  .stocklists__map--pin-1{
+    top: 72%;
+    left: 83%;
+  }
+
+}
+
+@media all and(min-width: 992px){
+
+  .stocklist__first-box,.stocklist__map--container,.stocklist__locations--section{
+    max-width: 900px;
+  }
+}
+
+@media all and(min-width: 1200px){
+
+  .stocklist__first-box,.stocklist__map--container,.stocklist__locations--section{
+    max-width: 1000px;
+  }
+
+
+}
